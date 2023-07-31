@@ -1,0 +1,23 @@
+var nota1 = 0.0;
+var nota2 = 0.0;
+var falta = 0;
+var nome = "";
+
+nota1 = prompt ("qual a sua primera nota ");
+nota2 = prompt ("qual a sua segunda nota ");
+falta = prompt ("quantas faltas você teve ");
+nome  = prompt ("qual seu nome");
+
+nota1 = parseFloat(nota1);
+nota2 = parseFloat(nota2);
+falta = parseInt(falta);
+
+var media = (nota1 + nota2) / 2
+
+if (media >= 7 && falta <3 ){
+  
+  console.log ("o aluno " + nome + " foi aprovadod com " + media);
+
+  }
+  else {console.log ("o aluno " + nome + " foi reprovado " + media + " e com " + falta + " faltas"); 
+ }  
