@@ -1,0 +1,34 @@
+var n = 0;
+
+console.log ("n inicial " + n)
+
+function somaNumeros (numero) {
+  var n = numero
+  console.log ("n recebido funcao" + n )
+  var soma = 0;
+  for (var i = 1; i<=n;i++){
+    
+    soma = soma + 1; 
+  }
+  n=100
+    console.log ("n atribuido funcao" + n ); 
+  return  soma; 
+
+}
+
+n = prompt ("numero inteiro ");
+console.log ("n recebido fora ")
+    
+    alert ("o resultado é " + somaNumeros(n));
+
+
+    
+    
+  
+  
+
+
+
+
+
+
