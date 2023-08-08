@@ -1,0 +1,17 @@
+var segundosParaExplodir = 10; // Defina aqui o número de segundos desejado
+
+console.log("Iniciando contagem regressiva...");
+
+while (segundosParaExplodir >= 0) {
+  if (segundosParaExplodir > 0) {
+    console.log(segundosParaExplodir + " segundos");
+  } else {
+    console.log("BUM!");
+  }
+
+  // Aguarda 1 segundo antes de imprimir o próximo valor
+  var startTime = new Date().getTime();
+  while (new Date().getTime() < startTime + 1000) {}
+
+  segundosParaExplodir--;
+}
