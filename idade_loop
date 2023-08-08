@@ -1,0 +1,15 @@
+var nome = ""; 
+var anoN = 0; 
+
+while (true) {
+  nome = prompt("Digite seu nome completo");
+  anoN = prompt("Digite o ano de nascimento");
+  
+  if (anoN >= 1922 && anoN <= 2021) {
+    idade = 2023 - anoN;
+    console.log("Seu nome é " + nome + " e a sua idade é " + idade + " anos.");
+    break; 
+  } else {
+    console.log("Ano de nascimento inválido. Tente novamente.");
+  }
+}
