@@ -1,0 +1,18 @@
+var numeroC = 0;
+var branco = 0;
+
+while (true) {
+  numeroC = prompt("Número do candidato (ou -1 para sair / voto branco):");
+
+  if (numeroC === "889" || numeroC === "847" || numeroC === "515") {
+    console.log("O candidato que você votou foi: " + numeroC);
+  } else if (numeroC === "0") {
+    console.log("Voto branco registrado.");
+    branco++;
+  } else if (numeroC === "-1") {
+    console.log("Encerrando a votação.");
+    break; // Sai do loop
+  } else {
+    console.log("Erro, número de candidato inválido. Tente novamente.");
+  }
+}
