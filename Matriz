@@ -1,0 +1,21 @@
+let animais = [
+  ["white", "cachorro", "branco"],
+  ["thor", "cachorro", "preto"]
+];
+
+function caracteristicas_animais() {
+  let coluna = parseInt(prompt("Digite o número da coluna (0 para nome, 1 para tipo, 2 para cor):"));
+
+  if (coluna >= 0 && coluna <= 2) {
+    for (let indice = 0; indice < animais.length; indice++) {
+      let caracteristica = animais[indice][coluna];
+      console.log("Características do animal:", indice + 1);
+      console.log(caracteristica);
+      console.log(""); 
+    }
+  } else {
+    console.log("Essa coluna não existe. Digite 0 para nome, 1 para tipo ou 2 para cor.");
+  }
+}
+
+caracteristicas_animais();
