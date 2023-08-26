@@ -1,0 +1,36 @@
+class Node {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+        this.next = null; // Referência ao próximo nó
+    }
+}
+
+class LinkedList {
+    constructor() {
+        this.head = null;
+    }
+
+    addFirst(name, age) {
+        const new_node = new Node(name, age);
+        new_node.next = this.head;
+        this.head = new_node;
+    }
+
+    // Outros métodos da lista encadeada aqui...
+}
+
+// Criando uma lista encadeada de pessoas
+const peopleList = new LinkedList();
+peopleList.addFirst("Pedro", 10);
+peopleList.addFirst("Maria", 30);
+peopleList.addFirst("João", 35);
+
+// Exemplo de como acessar os dados
+let current = peopleList.head;
+while (current) {
+    console.log("Nome:", current.name);
+    console.log("Idade:", current.age);
+    console.log("-".repeat(10));
+    current = current.next;
+}
