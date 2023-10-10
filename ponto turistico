@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Farol do Cabo Branco - João Pessoa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        header {
+            background-color: #007acc;
+            color: #fff;
+            padding: 10px;
+        }
+        h1 {
+            font-size: 24px;
+        }
+        p {
+            font-size: 18px;
+            margin: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Farol do Cabo Branco - João Pessoa</h1>
+    </header>
+    <img src="farol_cabo_branco.jpg" alt="Farol do Cabo Branco">
+    <p>O Farol do Cabo Branco é um dos principais pontos turísticos da cidade de João Pessoa, Paraíba. Localizado no ponto mais oriental das Américas, é conhecido por sua arquitetura moderna e sua vista panorâmica incrível do oceano Atlântico. É um lugar perfeito para apreciar o pôr do sol.</p>
+    <p>Se você está visitando João Pessoa, não deixe de conhecer este belo lugar!</p>
+</body>
+</html>
